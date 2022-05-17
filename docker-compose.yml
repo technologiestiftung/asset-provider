@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  provider:
+    image: technologiestiftung/asset-provider
+    env_file:
+      - .env
+    # build:
+    #   context: .
+    #   dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+      PORT: 8080
+    ports:
+      - 8080:8080
