@@ -58,7 +58,7 @@ server.after(() => {
       GET / This document
 
       GET /:key the file you are requesting
-      Example: curl  --fail http://USERNAME:PASSWORD@localhost:8080 --output out.zip
+      Example: curl  --fail http://USERNAME:PASSWORD@localhost:8080/file.ext --output file.ext
       `);
     },
   });
