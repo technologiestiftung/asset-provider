@@ -62,8 +62,6 @@
     "@fastify/sensible": "4.1.0",
     "fastify": "3.29.0",
     "fastify-sensible": "3.2.0",
-    "i": "0.3.7",
-    "make-promises-safe": "5.1.0",
-    "npm": "8.10.0"
+    "make-promises-safe": "5.1.0"
   }
 }
