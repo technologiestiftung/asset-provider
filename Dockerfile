@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:18-slim as builder
+FROM --platform=linux/amd64 node:20-slim as builder
 ENV NODE_ENV=development
 WORKDIR /usr/src/app
 
@@ -7,7 +7,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-FROM --platform=linux/amd64 node:18-slim as runner
+FROM --platform=linux/amd64 node:20-slim as runner
 ENV NODE_ENV=production
 WORKDIR /usr/app
 COPY ["package.json", "package-lock.json*", "./"]
